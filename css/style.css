@@ -1,18 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #082d9b;
     color: #333;
-    margin: 0;
+    margin: 30px;
     padding: 0;
   }
 h1 {
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
+    color: #eae1e1;
+  
+    margin-top: 10px;
 }
 
 p {
-    color: #666;
+    color: #b4afaf;
     font-size: 16px;
     line-height: 1.5;
     margin: 20px;
@@ -24,4 +24,22 @@ i{
     max-width: 100%;
     height: auto;
     margin: 40px;
+    color: aliceblue;
+}
+li{
+    color: #b4afaf;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid;
+    margin: 40px;
+    color: aliceblue;
+    box-shadow: 10px 10px 10px #000;
 }
