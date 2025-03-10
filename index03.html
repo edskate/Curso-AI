@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Desenho com Canvas</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #e0e0e0;
+    }
+    canvas {
+      background-color: #fff;
+      border: 3px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvasDesenho" width="500" height="500"></canvas>
+  <script>
+    // Obtém o contexto 2D do canvas
+    const canvas = document.getElementById('canvasDesenho');
+    const ctx = canvas.getContext('2d');
+
+    // Desenha um retângulo vermelho
+    ctx.fillStyle = 'red';
+    ctx.fillRect(50, 50, 150, 100);
+
+    // Desenha um círculo verde
+    ctx.beginPath();
+    ctx.arc(300, 150, 50, 0, Math.PI * 2);
+    ctx.fillStyle = 'green';
+    ctx.fill();
+    ctx.closePath();
+
+    // Desenha um triângulo azul
+    ctx.beginPath();
+    ctx.moveTo(250, 300);
+    ctx.lineTo(350, 300);
+    ctx.lineTo(300, 200);
+    ctx.closePath();
+    ctx.fillStyle = 'blue';
+    ctx.fill();
+
+    // Adiciona um texto
+    ctx.font = '20px Arial';
+    ctx.fillStyle = 'black';
+    ctx.fillText('Desenho com Canvas', 150, 450);
+  </script>
+</body>
+</html>
